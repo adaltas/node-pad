@@ -1,5 +1,6 @@
 
-module.exports = (string, size, opt_padString) ->
+module.exports = (string, size, char) ->
+    char ?= ' '
     if typeof string is 'number'
         _size = size
         size = string
@@ -7,9 +8,8 @@ module.exports = (string, size, opt_padString) ->
     string = string.toString()
     pad = ''
     size = size - string.length
-    padString = opt_padString or ' '
     for i in [0 ... size]
-        pad += padString
+        pad += char
     if _size
     then pad + string
     else string + pad
