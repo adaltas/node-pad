@@ -1,5 +1,6 @@
 
-module.exports = (string, size) ->
+module.exports = (string, size, char) ->
+    char ?= ' '
     if typeof string is 'number'
         _size = size
         size = string
@@ -8,7 +9,7 @@ module.exports = (string, size) ->
     pad = ''
     size = size - string.length
     for i in [0 ... size]
-        pad += ' '
+        pad += char
     if _size
     then pad + string
     else string + pad

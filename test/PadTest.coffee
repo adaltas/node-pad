@@ -1,10 +1,18 @@
 
-assert = require 'assert'
-pad = require '../index'
+pad = require '../'
+should = require 'should'
 
-module.exports = 
-    'Padding right': ->
-        assert.eql 'abc   ', pad('abc', 6)
-    'Padding left': ->
-        assert.eql '   abc', pad(6, 'abc')
-        
+
+describe 'pad', ->
+    it 'should pad right', (next) ->
+        pad('abc', 6).should.eql 'abc   '
+        next()
+    it 'should pad left', (next) ->
+        pad(6, 'abc').should.eql '   abc'
+        next()
+    it 'should pad right', (next) ->
+        pad('yeah', 6, '-').should.eql 'yeah--'
+        next()
+    it 'should pad left', (next) ->
+        pad(6, '234', '0').should.eql '000234'
+        next()
