@@ -1,6 +1,5 @@
 
-module.exports = (string, size, char) ->
-    char ?= ' '
+module.exports = (string, size, char=' ') ->
     if typeof string is 'number'
         _size = size
         size = string
