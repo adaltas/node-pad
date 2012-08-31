@@ -10,28 +10,26 @@
 
 Node Pad is a simple function to pad strings in the left and right directions.
 
-Left padding
-------------
+`pad(text, size, [char])`: Left padding
+---------------------------------------
 
 Node Pad does left padding when the first argument is a string and the second 
 argument is a number.
 
-```bash
-var assert = require('assert');
+```javascript
 var pad = require('pad');
-assert.equal('pad   ', pad('pad', 6));
+pad('pad', 6).should.eql('pad   ');
 ```
 
-Right padding
--------------
+`pad(size, text, [char])`: Right padding
+----------------------------------------
 
 Node Pad does right padding when the first argument is a number and the second 
 argument is a string.
 
-```bash
-var assert = require('assert');
+```javascript
 var pad = require('pad');
-assert.equal( '  pad', pad(5, 'pad'));
+pad(5, 'pad', '--').should.eql('--pad');
 ```
 
 Installing
@@ -40,7 +38,7 @@ Installing
 Via git (or downloaded tarball), copy or link the project from a discoverable Node directory:
 
 ```bash
-    $ git clone http://github.com/wdavidw/node-pad.git
+git clone http://github.com/wdavidw/node-pad.git
 ```
 
 Via [npm](http://github.com/isaacs/npm):
