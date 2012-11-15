@@ -1,6 +1,6 @@
 
-pad = require '../'
 should = require 'should'
+pad = if process.env.PAD_COV then require '../lib-cov/pad' else require '../lib/pad'
 
 describe 'pad', ->
   it 'should pad right', (next) ->
