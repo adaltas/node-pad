@@ -1,25 +1,25 @@
 {
-    "name": "pad",
-    "version": "0.0.3",
-    "description": "Left and right string padding",
-    "author": "David Worms <david@adaltas.com>",
-    "contributors": [
-        { "name": "David Worms", "email": "david@adaltas.com" }
-    ],
-    "devDependencies": {
-        "mocha": "latest",
-        "coffee-script": "latest",
-        "should": "latest"
-    },
-    "engines": {
-        "node": ">= 0.4.0"
-    },
-    "keywords": ["string", "pad"],
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/wdavidw/node-pad.git"
-    },
-    "scripts": {
-        "test": "make test"
-    }
+  "name": "pad",
+  "version": "0.0.3",
+  "description": "Left and right string padding",
+  "author": "David Worms <david@adaltas.com>",
+  "contributors": [
+    { "name": "David Worms", "email": "david@adaltas.com" }
+  ],
+  "devDependencies": {
+    "mocha": "latest",
+    "coffee-script": "latest",
+    "should": "latest"
+  },
+  "engines": {
+    "node": ">= 0.4.0"
+  },
+  "keywords": ["string", "pad"],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wdavidw/node-pad.git"
+  },
+  "scripts": {
+    "test": "make test"
+  }
 }
