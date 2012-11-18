@@ -3,14 +3,12 @@
     "version": "0.0.3",
     "description": "Left and right string padding",
     "author": "David Worms <david@adaltas.com>",
-    "contributors": [ 
+    "contributors": [
         { "name": "David Worms", "email": "david@adaltas.com" }
     ],
-    "dependencies": {
-        "coffee-script": "latest"
-    },
     "devDependencies": {
         "mocha": "latest",
+        "coffee-script": "latest",
         "should": "latest"
     },
     "engines": {
