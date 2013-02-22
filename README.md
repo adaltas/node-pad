@@ -1,3 +1,4 @@
+[![Build Status](https://secure.travis-ci.org/wdavidw/node-pad.png)](http://travis-ci.org/wdavidw/node-pad)
 
 <pre style="font-family:courier">
  _   _           _        _____          _ 
