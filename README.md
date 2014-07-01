@@ -11,26 +11,26 @@
 
 Node Pad is a simple function to pad strings in the left and right directions.
 
-`pad(text, size, [char])`: Left padding
----------------------------------------
-
-Node Pad does left padding when the first argument is a string and the second 
-argument is a number.
-
-```javascript
-var pad = require('pad');
-pad('pad', 6).should.eql('pad   ');
-```
-
-`pad(size, text, [char])`: Right padding
+`pad(size, text, [char])`: Left padding
 ----------------------------------------
 
-Node Pad does right padding when the first argument is a number and the second 
+Node Pad does left padding when the first argument is a number and the second
 argument is a string.
 
 ```javascript
 var pad = require('pad');
 pad(5, 'pad', '--').should.eql('--pad');
+```
+
+`pad(text, size, [char])`: Right padding
+---------------------------------------
+
+Node Pad does right padding when the first argument is a string and the second
+argument is a number.
+
+```javascript
+var pad = require('pad');
+pad('pad', 6).should.eql('pad   ');
 ```
 
 Installing
