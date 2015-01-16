@@ -11,8 +11,7 @@
 
 Node Pad is a simple function to pad strings in the left and right directions.
 
-`pad(text, size, [char])`: Left padding
----------------------------------------
+## `pad(text, size, [options])`: Left padding
 
 Node Pad does left padding when the first argument is a string and the second 
 argument is a number.
@@ -22,8 +21,7 @@ var pad = require('pad');
 pad('pad', 6).should.eql('pad   ');
 ```
 
-`pad(size, text, [char])`: Right padding
-----------------------------------------
+## `pad(size, text, [options])`: Right padding
 
 Node Pad does right padding when the first argument is a number and the second 
 argument is a string.
@@ -33,14 +31,15 @@ var pad = require('pad');
 pad(5, 'pad', '--').should.eql('--pad');
 ```
 
-Installing
-----------
+## Options
 
-Via git (or downloaded tarball), copy or link the project from a discoverable Node directory:
+Options are provided as a third argument and are all optional. A string argument
+it is interpreted as the "char" option. Accepted options include:
 
-```bash
-git clone http://github.com/wdavidw/node-pad.git
-```
+*   `char` (string)   
+    The character used to fill the gap.   
+
+## Installing
 
 Via [npm](http://github.com/isaacs/npm):
 
@@ -48,8 +47,13 @@ Via [npm](http://github.com/isaacs/npm):
 npm install pad
 ```
 
-Testing
--------
+Via git (or downloaded tarball), copy or link the project from a discoverable Node directory:
+
+```bash
+git clone http://github.com/wdavidw/node-pad.git
+```
+
+## Testing
 
 Clone the repo, install the development dependencies and run the suite:
 
