@@ -19,6 +19,7 @@
     "type": "git",
     "url": "https://github.com/wdavidw/node-pad.git"
   },
+  "main": "./lib/pad",
   "scripts": {
     "test": "make test"
   }
