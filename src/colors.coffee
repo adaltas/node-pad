@@ -1,5 +1,5 @@
 
-pad = require './pad'
+pad = require './index'
 
 module.exports = (string, size, options={}) ->
   options = char: options if typeof options is 'string'

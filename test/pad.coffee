@@ -1,6 +1,6 @@
 
 should = require 'should'
-pad = require '../lib/pad'
+pad = require '../lib'
 
 describe 'pad', ->
   it 'should pad right', (next) ->
