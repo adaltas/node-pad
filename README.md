@@ -38,6 +38,9 @@ it is interpreted as the "char" option. Accepted options include:
 
 *   `char` (string)   
     The character used to fill the gap.   
+*   `colors` (boolean)   
+    Ajust to hidden terminal color characters, you may also use
+    `require 'pad/lib/colors'` to avoid passing this option.   
 
 ## Installing
 
