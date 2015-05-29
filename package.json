@@ -1,6 +1,6 @@
 {
   "name": "pad",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "Left and right string padding",
   "author": "David Worms <david@adaltas.com>",
   "licenses": "BSD-3-Clause",
