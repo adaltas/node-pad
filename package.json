@@ -3,6 +3,7 @@
   "version": "0.0.8",
   "description": "Left and right string padding",
   "author": "David Worms <david@adaltas.com>",
+  "licenses": "BSD-3-Clause",
   "contributors": [
     { "name": "David Worms", "email": "david@adaltas.com" }
   ],
