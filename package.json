@@ -7,9 +7,9 @@
     { "name": "David Worms", "email": "david@adaltas.com" }
   ],
   "devDependencies": {
-    "mocha": "latest",
-    "coffee-script": "latest",
-    "should": "latest"
+    "mocha": "2.2.5",
+    "coffee-script": "1.9.3",
+    "should": "6.0.3"
   },
   "engines": {
     "node": ">= 0.4.0"
