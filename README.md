@@ -11,7 +11,7 @@
 
 Node Pad is a simple function to pad strings in the left and right directions.
 
-## `pad(size, text, [options])`: Left padding
+## `pad(length, text, [options])`: Left padding
 
 Node Pad does left padding when the first argument is a number and the second
 argument is a string.
@@ -21,7 +21,7 @@ var pad = require('pad');
 pad(5, 'pad', '--').should.eql('--pad');
 ```
 
-## `pad(text, size, [options])`: Right padding
+## `pad(text, length, [options])`: Right padding
 
 Node Pad does right padding when the first argument is a string and the second
 argument is a number.
@@ -41,6 +41,9 @@ it is interpreted as the "char" option. Accepted options include:
 *   `colors` (boolean)   
     Ajust to hidden terminal color characters, you may also use
     `require 'pad/lib/colors'` to avoid passing this option.   
+*   `strip` (boolean)   
+    Remove characters from text if length smaller than text length, default to
+    "false".   
 
 ## Installing
 
