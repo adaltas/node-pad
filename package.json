@@ -21,6 +21,7 @@
     "url": "https://github.com/wdavidw/node-pad.git"
   },
   "main": "./lib",
+  "license": "BSD-3-Clause",
   "scripts": {
     "coffee": "./node_modules/.bin/coffee -b -o lib src",
     "pretest": "./node_modules/.bin/coffee -b -o lib src",
