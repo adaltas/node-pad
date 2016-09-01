@@ -1,26 +1,32 @@
 {
   "name": "pad",
-  "version": "1.0.0",
   "description": "Left and right string padding",
+  "version": "1.0.0",
   "author": "David Worms <david@adaltas.com>",
-  "license": "BSD-3-Clause",
   "contributors": [
-    { "name": "David Worms", "email": "david@adaltas.com" }
+    {
+      "name": "David Worms",
+      "email": "david@adaltas.com"
+    }
   ],
   "devDependencies": {
-    "mocha": "^2.3.3",
     "coffee-script": "^1.10.0",
+    "mocha": "^2.3.3",
     "should": "^7.1.0"
   },
   "engines": {
     "node": ">= 0.4.0"
   },
-  "keywords": ["string", "pad"],
+  "keywords": [
+    "pad",
+    "string"
+  ],
+  "license": "BSD-3-Clause",
+  "main": "./lib",
   "repository": {
     "type": "git",
     "url": "https://github.com/wdavidw/node-pad.git"
   },
-  "main": "./lib",
   "scripts": {
     "coffee": "./node_modules/.bin/coffee -b -o lib src",
     "pretest": "./node_modules/.bin/coffee -b -o lib src",
