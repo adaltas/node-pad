@@ -8,7 +8,7 @@ module.exports = (text, length, options={}) ->
   text = text.toString()
   pad = ''
   if options.colors
-    escapecolor = /\x1B\[([0-9]{1,2}(;[0-9]{1,2})?)?[m|K]/g
+    escapecolor = /\x1B\[(?:[0-9]{1,2}(?:;[0-9]{1,2})?)?[m|K]/g
     length += text.length - text.replace(escapecolor, '').length
   padlength = length - text.length
   if padlength < 0
