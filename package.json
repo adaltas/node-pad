@@ -1,7 +1,7 @@
 {
   "name": "pad",
   "description": "Left and right string padding",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "David Worms <david@adaltas.com>",
   "contributors": [
     {
