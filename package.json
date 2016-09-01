@@ -28,8 +28,8 @@
     "url": "https://github.com/wdavidw/node-pad.git"
   },
   "scripts": {
-    "coffee": "./node_modules/.bin/coffee -b -o lib src",
-    "pretest": "./node_modules/.bin/coffee -b -o lib src",
-    "test": "./node_modules/.bin/mocha --compilers coffee:coffee-script/register --reporter dot"
+    "coffee": "coffee -b -o lib src",
+    "pretest": "coffee -b -o lib src",
+    "test": "mocha --compilers coffee:coffee-script/register --reporter dot"
   }
 }
