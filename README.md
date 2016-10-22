@@ -1,29 +1,29 @@
 [![Build Status](https://secure.travis-ci.org/wdavidw/node-pad.png)](http://travis-ci.org/wdavidw/node-pad)
 
-<pre style="font-family:courier">
- _   _           _        _____          _ 
-| \ | |         | |      |  __ \        | |
-|  \| | ___   __| | ___  | |__) |_ _  __| |
-| . ` |/ _ \ / _` |/ _ \ |  ___/ _` |/ _` |
-| |\  | (_) | (_| |  __/ | |  | (_| | (_| |
-|_| \_|\___/ \__,_|\___| |_|   \__,_|\__,_| New BSD License
-</pre>
+Node Pad is a simple function to pad strings in both left and right directions.
 
-Node Pad is a simple function to pad strings in the left and right directions.
+## Exemples
 
-## `pad(length, text, [options])`: Left padding
+```javascript
+pad('pad', 5) # "pad  "
+pad(5, 'pad') # "  pad"
+pad('pad', 5, '+') # "pad++"
+pad(5, 'pad', '+') # "++pad"
+```
 
-Node Pad does left padding when the first argument is a number and the second
+## Left padding: `pad(length, text, [options])`
+
+Left padding occurs when the first argument is a number and the second
 argument is a string.
 
 ```javascript
 var pad = require('pad');
-pad(5, 'pad', '--').should.eql('--pad');
+pad(5, 'pad', '-').should.eql('-pad');
 ```
 
-## `pad(text, length, [options])`: Right padding
+## Right padding: `pad(text, length, [options])`
 
-Node Pad does right padding when the first argument is a string and the second
+Right padding occurs when the first argument is a string and the second
 argument is a number.
 
 ```javascript
