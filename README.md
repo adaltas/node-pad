@@ -5,10 +5,10 @@ Node Pad is a simple function to pad strings in both left and right directions.
 ## Exemples
 
 ```javascript
-pad('pad', 5) # "pad  "
-pad(5, 'pad') # "  pad"
-pad('pad', 5, '+') # "pad++"
-pad(5, 'pad', '+') # "++pad"
+pad('pad', 5)      // "pad  "
+pad(5, 'pad')      // "  pad"
+pad('pad', 5, '+') // "pad++"
+pad(5, 'pad', '+') // "++pad"
 ```
 
 ## Left padding: `pad(length, text, [options])`
