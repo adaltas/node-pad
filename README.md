@@ -1,4 +1,4 @@
-[![Build Status](https://secure.travis-ci.org/wdavidw/node-pad.png)](http://travis-ci.org/wdavidw/node-pad)
+[![Build Status](https://secure.travis-ci.org/adaltas/node-pad.png)](http://travis-ci.org/adaltas/node-pad)
 
 Node Pad is a simple function to pad strings in both left and right directions.
 
