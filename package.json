@@ -1,7 +1,7 @@
 {
   "name": "pad",
   "description": "Left and right string padding",
-  "version": "1.0.3",
+  "version": "1.1.0",
   "author": "David Worms <david@adaltas.com>",
   "contributors": [
     {
@@ -15,7 +15,7 @@
     "should": "^11.2.0"
   },
   "engines": {
-    "node": ">= 0.4.0"
+    "node": ">= 4.0.0"
   },
   "homepage": "https://github.com/adaltas/node-pad",
   "keywords": [
