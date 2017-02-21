@@ -10,9 +10,9 @@
     }
   ],
   "devDependencies": {
-    "coffee-script": "^1.11.1",
-    "mocha": "^3.1.2",
-    "should": "^11.1.1"
+    "coffee-script": "^1.12.4",
+    "mocha": "^3.2.0",
+    "should": "^11.2.0"
   },
   "engines": {
     "node": ">= 0.4.0"
