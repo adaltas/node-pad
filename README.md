@@ -3,9 +3,9 @@
 
 [![Build Status](https://secure.travis-ci.org/adaltas/node-pad.png)](http://travis-ci.org/adaltas/node-pad)
 
-Node Pad is a simple function to pad strings in both left and right directions.
+Node Pad is a simple and elegant function to pad strings in both left and right directions.
 
-## Exemples
+## Usage
 
 ```javascript
 pad('pad', 5)      // "pad  "
