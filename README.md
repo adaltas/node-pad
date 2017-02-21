@@ -50,6 +50,8 @@ pad('pad', 6).should.eql('pad   ');
 
 ## Installing
 
+Starting with version 1.1.0, Node pad rely on Node.js 4.0.0 or more recent. Stick to version 1.0.x if using an older version of Node.js.
+
 Via [npm](http://github.com/isaacs/npm):
 
 ```bash

@@ -17,7 +17,7 @@ module.exports = (text, length, options={}) ->
       then text.substr length * -1
       else text.substr 0, length
     return text
-  pad += options.char for i in [0 ... padlength]
+  pad += options.char.repeat padlength
   if invert
   then pad + text
   else text + pad
