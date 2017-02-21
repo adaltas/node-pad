@@ -11,6 +11,20 @@ pad('pad', 5, '+') // "pad++"
 pad(5, 'pad', '+') // "++pad"
 ```
 
+## Options
+
+Options are provided as a third argument and are all optional. A string argument
+it is interpreted as the "char" option. Accepted options include:
+
+*   `char` (string)   
+    The character used to fill the gap.   
+*   `colors` (boolean)   
+    Ajust to hidden terminal color characters, you may also use
+    `require 'pad/lib/colors'` to avoid passing this option.   
+*   `strip` (boolean)   
+    Remove characters from text if length smaller than text length, default to
+    "false".   
+
 ## Left padding: `pad(length, text, [options])`
 
 Left padding occurs when the first argument is a number and the second
@@ -30,20 +44,6 @@ argument is a number.
 var pad = require('pad');
 pad('pad', 6).should.eql('pad   ');
 ```
-
-## Options
-
-Options are provided as a third argument and are all optional. A string argument
-it is interpreted as the "char" option. Accepted options include:
-
-*   `char` (string)   
-    The character used to fill the gap.   
-*   `colors` (boolean)   
-    Ajust to hidden terminal color characters, you may also use
-    `require 'pad/lib/colors'` to avoid passing this option.   
-*   `strip` (boolean)   
-    Remove characters from text if length smaller than text length, default to
-    "false".   
 
 ## Installing
 
