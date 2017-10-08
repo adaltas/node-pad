@@ -1,7 +1,7 @@
 
 # Changelog
 
-## trunk
+## v1.2.0
 
 * src: handle characters using multi columns for display
 * package: new changelog file
