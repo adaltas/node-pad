@@ -19,14 +19,21 @@ pad(5, 'pad', '+') // "++pad"
 Options are provided as a third argument and are all optional. A string argument
 it is interpreted as the "char" option. Accepted options include:
 
-*   `char` (string)   
-    The character used to fill the gap.   
-*   `colors` (boolean)   
-    Ajust to hidden terminal color characters, you may also use
-    `require 'pad/lib/colors'` to avoid passing this option.   
-*   `strip` (boolean)   
-    Remove characters from text if length smaller than text length, default to
-    "false".   
+* `char` (string)   
+  The character used to fill the gap.   
+* `colors` (boolean)   
+  Ajust to hidden terminal color characters, you may also use
+  `require 'pad/lib/colors'` to avoid passing this option.   
+* `strip` (boolean)   
+  Remove characters from text if length smaller than text length, default to
+  "false".   
+* `fixed_width` (boolean)   
+  An optimization option to disable the usage of the wcwdith package to handle
+  the discovery of characters using more than one column for display.
+  one column to display
+* `wcwidth_options` (object)   
+  Options passed to the wcwidth package used to calculate the display width of 
+  characters using more than one column.
 
 ## Left padding: `pad(length, text, [options])`
 

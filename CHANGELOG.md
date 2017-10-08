@@ -3,6 +3,7 @@
 
 ## trunk
 
+* src: handle characters using multi columns for display
 * package: new changelog file
 * package: upgrade to CoffeeScript 2
 
