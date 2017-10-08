@@ -1,0 +1,6 @@
+--throw-deprecation
+--timeout 40000
+--require should
+--require coffeescript/register
+--reporter spec
+--recursive

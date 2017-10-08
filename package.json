@@ -10,9 +10,8 @@
     }
   ],
   "devDependencies": {
-    "coffee-script": "^1.12.4",
-    "mocha": "^3.2.0",
-    "should": "^11.2.0"
+    "mocha": "^4.0.1",
+    "should": "^13.1.1"
   },
   "engines": {
     "node": ">= 4.0.0"
@@ -31,6 +30,9 @@
   "scripts": {
     "coffee": "coffee -b -o lib src",
     "pretest": "coffee -b -o lib src",
-    "test": "mocha --compilers coffee:coffee-script/register --reporter dot"
+    "test": "mocha test/**/*.coffee"
+  },
+  "dependencies": {
+    "coffeescript": "^2.0.1"
   }
 }
