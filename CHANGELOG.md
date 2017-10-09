@@ -1,6 +1,14 @@
 
 # Changelog
 
+## v2.0.0
+
+* package: upgrade to CoffeeScript 2
+
+## v1.2.1
+
+* package revers to CoffeeScript 1
+
 ## v1.2.0
 
 * src: handle characters using multi columns for display
