@@ -1,6 +1,10 @@
 
 # Changelog
 
+## v2.0.1
+
+src: js backward compatibility with coffee 2
+
 ## v2.0.0
 
 * package: upgrade to CoffeeScript 2
