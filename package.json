@@ -33,7 +33,6 @@
     "test": "mocha test/**/*.coffee"
   },
   "dependencies": {
-    "coffee-script": "^1.12.7",
     "wcwidth": "^1.0.1"
   }
 }
