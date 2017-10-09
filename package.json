@@ -28,8 +28,8 @@
     "url": "https://github.com/adaltas/node-pad.git"
   },
   "scripts": {
-    "coffee": "coffee -b -o lib src",
-    "pretest": "coffee -b -o lib src",
+    "coffee": "./node_modules/.bin/coffee -b -o lib src",
+    "pretest": "./node_modules/.bin/coffee -b -o lib src",
     "test": "./node_modules/.bin/mocha test/**/*.coffee"
   },
   "dependencies": {
