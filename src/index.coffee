@@ -1,7 +1,8 @@
 
 wcwidth = require 'wcwidth'
 
-module.exports = (text, length, options={}) ->
+module.exports = (text, length, options) ->
+  options ?= {}
   invert = typeof text is 'number'
   [length, text] = [text, length] if invert
   options = char: options if typeof options is 'string'
