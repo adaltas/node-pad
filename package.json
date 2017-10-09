@@ -30,7 +30,7 @@
   "scripts": {
     "coffee": "coffee -b -o lib src",
     "pretest": "coffee -b -o lib src",
-    "test": "mocha test/**/*.coffee"
+    "test": "./node_modules/.bin/mocha test/**/*.coffee"
   },
   "dependencies": {
     "wcwidth": "^1.0.1"
