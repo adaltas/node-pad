@@ -1,6 +1,10 @@
 
 # Changelog
 
+## Trunk
+
+* package: release commands
+
 ## v2.0.1
 
 src: js backward compatibility with coffee 2
