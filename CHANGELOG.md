@@ -1,6 +1,10 @@
 
 # Changelog
 
+## Trunk
+
+* package: declare coffee as dev dependency
+
 ## Version 2.0.2
 
 * package: release commands
