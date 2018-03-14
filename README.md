@@ -42,7 +42,7 @@ argument is a string.
 
 ```javascript
 var pad = require('pad');
-pad(5, 'pad', '-').should.eql('-pad');
+pad(5, 'pad', '-').should.eql('--pad');
 ```
 
 ## Right padding: `pad(text, length, [options])`
