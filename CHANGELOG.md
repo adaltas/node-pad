@@ -1,7 +1,7 @@
 
 # Changelog
 
-## Trunk
+## Version 2.1.0
 
 * package: add TypeScript definition file
 
