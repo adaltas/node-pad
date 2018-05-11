@@ -7,6 +7,8 @@ Node Pad is a simple and elegant function to pad strings in both left and right 
 
 ## Usage
 
+The API is quite simple:
+
 ```javascript
 pad('pad', 5)      // "pad  "
 pad(5, 'pad')      // "  pad"
@@ -14,25 +16,28 @@ pad('pad', 5, '+') // "pad++"
 pad(5, 'pad', '+') // "++pad"
 ```
 
+For TypeScript users, the type definition file is located in "./lib/index.d.ts"
+and declared inside the "package.json" file.
+
 ## Options
 
 Options are provided as a third argument and are all optional. A string argument
 it is interpreted as the "char" option. Accepted options include:
 
 * `char` (string)   
-  The character used to fill the gap.   
+  The character used to fill the gap.
 * `colors` (boolean)   
   Ajust to hidden terminal color characters, you may also use
-  `require 'pad/lib/colors'` to avoid passing this option.   
+  `require 'pad/lib/colors'` to avoid passing this option.
 * `strip` (boolean)   
   Remove characters from text if length smaller than text length, default to
-  "false".   
+  "false".
 * `fixed_width` (boolean)   
   An optimization option to disable the usage of the wcwdith package to handle
   the discovery of characters using more than one column for display.
   one column to display
 * `wcwidth_options` (object)   
-  Options passed to the wcwidth package used to calculate the display width of 
+  Options passed to the wcwidth package used to calculate the display width of
   characters using more than one column.
 
 ## Left padding: `pad(length, text, [options])`
@@ -57,7 +62,8 @@ pad('pad', 6).should.eql('pad   ');
 
 ## Installing
 
-Starting with version 1.1.0, Node pad rely on Node.js 4.0.0 or more recent. Stick to version 1.0.x if using an older version of Node.js.
+Starting with version 1.1.0, Node pad rely on Node.js 4.0.0 or more recent.
+Stick to version 1.0.x if using an older version of Node.js.
 
 Via [npm](http://github.com/isaacs/npm):
 
@@ -65,7 +71,8 @@ Via [npm](http://github.com/isaacs/npm):
 npm install pad
 ```
 
-Via git (or downloaded tarball), copy or link the project from a discoverable Node directory:
+Via git (or downloaded tarball), copy or link the project from a discoverable
+Node.js directory:
 
 ```bash
 git clone http://github.com/wdavidw/node-pad.git

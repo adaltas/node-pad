@@ -41,5 +41,6 @@
   },
   "dependencies": {
     "wcwidth": "^1.0.1"
-  }
+  },
+  "types": "lib/index.d.ts"
 }
