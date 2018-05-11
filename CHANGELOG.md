@@ -1,6 +1,10 @@
 
 # Changelog
 
+## Trunk
+
+* package: add TypeScript definition file
+
 ## Version 2.0.3
 
 * package: declare coffee as dev dependency
