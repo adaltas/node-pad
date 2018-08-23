@@ -2,3 +2,4 @@
 /test
 /Makefile
 .travis.yml
+package-log.json

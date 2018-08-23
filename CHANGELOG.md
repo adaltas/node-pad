@@ -7,6 +7,10 @@ New feature:
 
 * package: generate es5 modules
 
+Cleanup
+
+* package: exclude package-lock file
+
 ## Version 2.1.0
 
 * package: add TypeScript definition file

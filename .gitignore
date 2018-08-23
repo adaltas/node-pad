@@ -1,4 +1,5 @@
 .*
+package-log.json
 /node_modules
 !.npmignore
 !.gitignore
