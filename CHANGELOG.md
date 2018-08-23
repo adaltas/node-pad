@@ -9,6 +9,7 @@ New feature:
 
 Cleanup
 
+* package: latest dependencies
 * package: exclude package-lock file
 
 ## Version 2.1.0
