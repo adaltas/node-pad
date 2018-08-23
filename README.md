@@ -10,6 +10,7 @@ Node Pad is a simple and elegant function to pad strings in both left and right 
 The API is quite simple:
 
 ```javascript
+const pad = require('pad')
 pad('pad', 5)      // "pad  "
 pad(5, 'pad')      // "  pad"
 pad('pad', 5, '+') // "pad++"
@@ -18,6 +19,14 @@ pad(5, 'pad', '+') // "++pad"
 
 For TypeScript users, the type definition file is located in "./lib/index.d.ts"
 and declared inside the "package.json" file.
+
+This package is written for ES6 supported by Node.js version 7.5 and above. For
+older browsers or older versions of Node.js, use the modules inside "./lib/es5".
+
+```javascript
+const pad = require('pad/lib/es5')
+pad('pad', 5)      // "pad  "
+```
 
 ## Options
 

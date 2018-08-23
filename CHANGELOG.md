@@ -1,6 +1,10 @@
 
 # Changelog
 
+## Trunk
+
+* readme: es5
+
 ## Version 2.2.0
 
 New feature:
