@@ -1,6 +1,12 @@
 
 # Changelog
 
+## Trunk
+
+New feature:
+
+* package: generate es5 modules
+
 ## Version 2.1.0
 
 * package: add TypeScript definition file
