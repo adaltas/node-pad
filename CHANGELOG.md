@@ -1,6 +1,10 @@
 
 # Changelog
 
+## Trunk
+
+* babel: fix es5 generation and upgrade to version 7
+
 ## Version 2.2.1
 
 * readme: es5

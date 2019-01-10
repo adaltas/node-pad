@@ -1,6 +1,7 @@
 .*
 package-log.json
 /node_modules
+!.babelrc
 !.npmignore
 !.gitignore
 !.travis.yml
