@@ -1,6 +1,10 @@
 
 # Changelog
 
+## Trunk
+
+* wcwidth: pass configuration
+
 ## Version 2.2.2
 
 * babel: fix es5 generation and upgrade to version 7

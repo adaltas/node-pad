@@ -16,7 +16,7 @@ module.exports = (text, length, options) ->
     textnocolors = text.replace escapecolor, ''
   padlength = if options.fixed_width
   then length - (textnocolors || text).length
-  else length - wcwidth (textnocolors || text), options.wcwidth_options
+  else length - wcwidth.config(options.wcwidth_options)(textnocolors || text)
   if padlength < 0
     if options.strip
       return if invert
