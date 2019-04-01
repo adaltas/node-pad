@@ -1,7 +1,7 @@
 
 # Changelog
 
-## Trunk
+## Version 2.3.0
 
 * project: use files instead of npm ignore
 * project: ignore lock file
