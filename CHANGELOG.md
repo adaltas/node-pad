@@ -1,6 +1,11 @@
 
 # Changelog
 
+## Trunk
+
+* project: use files instead of npm ignore
+* project: ignore lock file
+
 ## Version 2.2.3
 
 * wcwidth: pass configuration

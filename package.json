@@ -25,6 +25,9 @@
     "pad",
     "string"
   ],
+  "files": [
+    "/lib"
+  ],
   "license": "BSD-3-Clause",
   "main": "./lib",
   "repository": {
