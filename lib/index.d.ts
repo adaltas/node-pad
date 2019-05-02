@@ -6,7 +6,7 @@
 
 export = pad;
 
-/** left pad */
+/** Left pad */
 declare function pad(length: number, text: string, char?: string): string;
 // tslint:disable-next-line unified-signatures
 declare function pad(length: number, text: string, options?: { char?: string, colors?: boolean, strip?: boolean }): string;
