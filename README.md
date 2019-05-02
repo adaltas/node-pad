@@ -17,15 +17,33 @@ pad('pad', 5, '+') // "pad++"
 pad(5, 'pad', '+') // "++pad"
 ```
 
-For TypeScript users, the type definition file is located in "./lib/index.d.ts"
-and declared inside the "package.json" file.
+For TypeScript users, the type definition files are located in "./lib/index.d.ts" and declared inside the "package.json" file.
 
-This package is written for ES6 supported by Node.js version 7.5 and above. For
-older browsers or older versions of Node.js, use the modules inside "./lib/es5".
+## Bundles
 
-```javascript
-const pad = require('pad/lib/es5')
-pad('pad', 5)      // "pad  "
+Node Pad comes in multiple flavours depending on your target environment:
+
+* CommonJS: `dist/pad.cjs.js`   
+  Bundle used by Node.js and compatible with ES5. It is declared inside the `package.json` by the `main` property and used by default with `require("pad")` in a Node.js environment.
+* ES module: `dist/pad.esm.js`   
+  Bundle using the ECMAScript standard defined in ES6 for working with modules. The path to the ES module is declared inside the `package.json` by the `module` property for ESM-aware tools like [Rollup](https://rollupjs.org) and [webpack 2+](https://webpack.js.org/).
+* UMD: `dis/pad.umd.js`
+  Bundle in the Universal Module Definition (UMD), a format compatible with both AMD and CommonJS.
+
+The CommonJS syntax to import Node Pad is:
+
+```js
+const pad = require("pad/dist/pad.cjs.js")
+// Or simply
+const pad = require("pad")
+```
+
+While the ES Modules syntax is:
+
+```js
+import pad from "pad/dist/pad.esm.js"
+// Or for ESM-aware tools
+import pad from "pad"
 ```
 
 ## Options
@@ -36,14 +54,11 @@ it is interpreted as the "char" option. Accepted options include:
 * `char` (string)   
   The character used to fill the gap.
 * `colors` (boolean)   
-  Ajust to hidden terminal color characters, you may also use
-  `require 'pad/lib/colors'` to avoid passing this option.
+  Ajust to hidden terminal color characters, you may also use `require 'pad/lib/colors'` to avoid passing this option.
 * `strip` (boolean)   
-  Remove characters from text if length smaller than text length, default to
-  "false".
+  Remove characters from text if length smaller than text length, default to "false".
 * `fixed_width` (boolean)   
-  An optimization option to disable the usage of the wcwdith package to handle
-  the discovery of characters using more than one column for display.
+  An optimization option to disable the usage of the wcwdith package to handle the discovery of characters using more than one column for display.
   one column to display
 * `wcwidth_options` (object)   
   Options passed to the wcwidth package used to calculate the display width of

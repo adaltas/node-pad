@@ -1,6 +1,6 @@
 --throw-deprecation
 --timeout 40000
 --require should
---require coffeescript/register
+--require ./coffee.config.js
 --reporter spec
 --recursive

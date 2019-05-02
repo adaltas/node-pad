@@ -1,6 +1,8 @@
 
 should = require 'should'
-pad = require '../src'
+import pad from '../src'
+
+console.log pad
 
 describe 'pad', ->
 

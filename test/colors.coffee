@@ -1,6 +1,6 @@
 
 should = require 'should'
-pad = require '../src/colors'
+import pad from '../src/colors'
 
 describe 'colors', ->
 

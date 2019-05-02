@@ -1,7 +1,9 @@
 
-pad = require './index'
+import pad from './index'
 
-module.exports = (string, size, options={}) ->
+color = (string, size, options={}) ->
   options = char: options if typeof options is 'string'
   options.colors = true
   pad string, size, options
+
+export default color

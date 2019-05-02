@@ -15,6 +15,8 @@
     "@babel/preset-env": "^7.4.2",
     "coffeescript": "^2.4.0",
     "mocha": "^6.0.2",
+    "rollup": "^1.9.0",
+    "rollup-plugin-babel": "^4.3.2",
     "should": "^13.2.3"
   },
   "engines": {
@@ -29,7 +31,8 @@
     "/lib"
   ],
   "license": "BSD-3-Clause",
-  "main": "./lib",
+  "main": "dist/pad.cjs.js",
+  "module": "dist/pad.esm.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/adaltas/node-pad.git"
@@ -41,8 +44,8 @@
     "patch": "npm version patch -m 'Bump to version %s'",
     "minor": "npm version minor -m 'Bump to version %s'",
     "major": "npm version major -m 'Bump to version %s'",
-    "coffee": "coffee -b -o lib src && cd lib && babel *.js  -d es5 && cd ..",
-    "pretest": "coffee -b -o lib src && cd lib && babel *.js  -d es5 && cd ..",
+    "build": "coffee -b -o lib src && rollup -c",
+    "pretest": "npm run build",
     "test": "mocha test/**/*.coffee"
   },
   "dependencies": {

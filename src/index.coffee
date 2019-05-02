@@ -1,7 +1,7 @@
 
-wcwidth = require 'wcwidth'
+import * as wcwidth from 'wcwidth'
 
-module.exports = (text, length, options) ->
+pad = (text, length, options) ->
   options ?= {}
   invert = typeof text is 'number'
   [length, text] = [text, length] if invert
@@ -27,3 +27,5 @@ module.exports = (text, length, options) ->
   if invert
   then pad + text
   else text + pad
+
+export default pad
