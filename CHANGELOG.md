@@ -1,6 +1,15 @@
 
 # Changelog
 
+## Trunk
+
+Backward incompatibility:
+* bundles: exported modules are no longer in lib but in dist
+* api: remove the colors module, use directly the option instead
+
+New feature:
+* dist: generate cjs, esm and umd bundles
+
 ## Version 2.3.0
 
 * project: use files instead of npm ignore
