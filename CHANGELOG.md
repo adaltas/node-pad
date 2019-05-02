@@ -1,7 +1,7 @@
 
 # Changelog
 
-## Trunk
+## Version 3.0.0
 
 Backward incompatibility:
 * bundles: exported modules are no longer in lib but in dist
