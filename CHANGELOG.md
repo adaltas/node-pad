@@ -3,6 +3,7 @@
 
 ## Trunk
 
+* rollup: use commonjs and node-resolve plugins
 * ts: move definition file into dist/pad.d.ts
 
 ## Version 3.0.0

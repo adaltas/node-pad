@@ -49,6 +49,8 @@
     "test": "mocha test/**/*.coffee"
   },
   "dependencies": {
+    "rollup-plugin-commonjs": "^9.3.4",
+    "rollup-plugin-node-resolve": "^4.2.3",
     "wcwidth": "^1.0.1"
   },
   "types": "dist/pad.d.ts"
