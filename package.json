@@ -44,12 +44,12 @@
     "patch": "npm version patch -m 'Bump to version %s'",
     "minor": "npm version minor -m 'Bump to version %s'",
     "major": "npm version major -m 'Bump to version %s'",
-    "build": "coffee -b -o lib src && rollup -c",
+    "build": "coffee -b -o lib src && rollup -c && rm -r lib && cp -p src/index.d.ts dist/pad.d.ts",
     "pretest": "npm run build",
     "test": "mocha test/**/*.coffee"
   },
   "dependencies": {
     "wcwidth": "^1.0.1"
   },
-  "types": "lib/index.d.ts"
+  "types": "dist/pad.d.ts"
 }

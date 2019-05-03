@@ -1,6 +1,10 @@
 
 # Changelog
 
+## Trunk
+
+* ts: move definition file into dist/pad.d.ts
+
 ## Version 3.0.0
 
 Backward incompatibility:
