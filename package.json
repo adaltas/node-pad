@@ -28,7 +28,7 @@
     "string"
   ],
   "files": [
-    "/lib"
+    "/dist"
   ],
   "license": "BSD-3-Clause",
   "main": "dist/pad.cjs.js",

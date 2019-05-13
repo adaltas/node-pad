@@ -1,6 +1,10 @@
 
 # Changelog
 
+## Trunk
+
+* package: declare "dist" in files filed
+
 ## Version 3.0.1
 
 * rollup: use commonjs and node-resolve plugins
