@@ -1,7 +1,7 @@
 
 # Changelog
 
-## Trunk
+## Version 3.2.0
 
 * package: fix rollup dev dependencies
 
