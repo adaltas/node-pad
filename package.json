@@ -10,15 +10,15 @@
     }
   ],
   "devDependencies": {
-    "@babel/cli": "^7.2.3",
-    "@babel/core": "^7.4.0",
-    "@babel/preset-env": "^7.4.2",
-    "coffeescript": "^2.4.0",
-    "mocha": "^6.0.2",
-    "rollup": "^1.9.0",
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.4",
+    "@babel/preset-env": "^7.4.4",
+    "coffeescript": "^2.4.1",
+    "mocha": "^6.1.4",
+    "rollup": "^1.12.3",
     "rollup-plugin-babel": "^4.3.2",
-    "rollup-plugin-commonjs": "^9.3.4",
-    "rollup-plugin-node-resolve": "^4.2.3",
+    "rollup-plugin-commonjs": "^10.0.0",
+    "rollup-plugin-node-resolve": "^5.0.0",
     "should": "^13.2.3"
   },
   "engines": {
