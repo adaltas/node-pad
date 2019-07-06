@@ -4,7 +4,7 @@
 //                 windware <https://github.com/windware>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 
-export = pad;
+export default pad;
 
 /** Left pad */
 declare function pad(length: number, text: string, char?: string): string;
