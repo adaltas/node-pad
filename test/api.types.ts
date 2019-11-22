@@ -8,8 +8,8 @@ describe('API Types', () => {
   it('Arguments', () => {
     pad('text', 5).should.eql('text ')
     pad('text', 5, {}).should.eql('text ')
-    pad(5, 'text').should.eql('text ')
-    pad(5, 'text', {}).should.eql('text ')
+    pad(5, 'text').should.eql(' text')
+    pad(5, 'text', {}).should.eql(' text')
   })
   
   it('Options', () => {

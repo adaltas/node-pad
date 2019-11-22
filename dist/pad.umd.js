@@ -318,7 +318,7 @@
       textnocolors = text.replace(escapecolor, '');
     }
 
-    padlength = options.fixed_width ? length - (textnocolors || text).length : length - wcwidth_1.config(options.wcwidth_options)(textnocolors || text);
+    padlength = options.fixed_width === true ? length - (textnocolors || text).length : length - wcwidth_1.config(options.wcwidth_options)(textnocolors || text);
 
     if (padlength < 0) {
       if (options.strip) {

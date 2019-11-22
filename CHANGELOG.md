@@ -1,6 +1,11 @@
 
 # Changelog
 
+## Trunk
+
+* ts: api tests
+* src: rewrite in js
+
 ## Version 3.2.0
 
 * package: fix rollup dev dependencies
