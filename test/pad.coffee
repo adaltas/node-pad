@@ -1,8 +1,5 @@
 
-should = require 'should'
-import pad from '../src'
-
-console.log pad
+pad = require '../lib'
 
 describe 'pad', ->
 

@@ -13,6 +13,9 @@
     "@babel/cli": "^7.4.4",
     "@babel/core": "^7.4.4",
     "@babel/preset-env": "^7.4.4",
+    "@types/mocha": "^5.2.5",
+    "@types/node": "^10.12.10",
+    "@types/should": "^13.0.0",
     "coffeescript": "^2.4.1",
     "mocha": "^6.1.4",
     "rollup": "^1.12.3",
@@ -46,11 +49,13 @@
     "patch": "npm version patch -m 'Bump to version %s'",
     "minor": "npm version minor -m 'Bump to version %s'",
     "major": "npm version major -m 'Bump to version %s'",
-    "build": "coffee -b -o lib src && rollup -c && rm -r lib && cp -p src/index.d.ts dist/pad.d.ts",
+    "build": "rollup -c && cp -p lib/index.d.ts dist/pad.d.ts",
     "pretest": "npm run build",
-    "test": "mocha test/**/*.coffee"
+    "test": "mocha test/*.{coffee,ts}"
   },
   "dependencies": {
+    "ts-node": "^8.3.0",
+    "typescript": "^3.5.3",
     "wcwidth": "^1.0.1"
   },
   "types": "dist/pad.d.ts"

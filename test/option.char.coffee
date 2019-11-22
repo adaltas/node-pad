@@ -1,6 +1,5 @@
 
-should = require 'should'
-import pad from '../src'
+pad = require '../lib'
 
 describe 'option.char', ->
 
