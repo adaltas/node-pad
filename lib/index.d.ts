@@ -5,9 +5,6 @@
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 
 export = pad;
-import * as wcwidth from "wcwidth";
-
-
 
 /** Left pad */
 declare function pad(length: number, text: string, char?: string): string;
