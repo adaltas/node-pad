@@ -3,6 +3,7 @@
 
 ## Trunk
 
+* package: update author url
 * ts: api tests
 * src: rewrite in js
 

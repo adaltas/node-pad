@@ -2,13 +2,8 @@
   "name": "pad",
   "description": "Left and right string padding",
   "version": "3.2.0",
-  "author": "David Worms <david@adaltas.com>",
-  "contributors": [
-    {
-      "name": "David Worms",
-      "email": "david@adaltas.com"
-    }
-  ],
+  "author": "David Worms <david@adaltas.com> (https://www.adaltas.com)",
+  "contributors": [],
   "devDependencies": {
     "@babel/cli": "^7.4.4",
     "@babel/core": "^7.4.4",
