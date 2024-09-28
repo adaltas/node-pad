@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Node Pad documentation
+    url: https://github.com/adaltas/node-pad
+    about: Check out the Pad documentation for answers to common questions.
