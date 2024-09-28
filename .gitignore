@@ -5,4 +5,4 @@
 /node_modules
 !.babelrc
 !.gitignore
-!.travis.yml
+!.github
