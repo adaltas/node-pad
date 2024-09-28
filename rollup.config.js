@@ -1,21 +1,20 @@
 import commonjs from "rollup-plugin-commonjs";
 import resolve from "rollup-plugin-node-resolve";
-const pkg = require("./package");
 
 export default {
   input: "lib/index.js",
   output: [
     {
-      file: `dist/${pkg.name}.umd.js`,
+      file: `dist/pad.umd.js`,
       name: "mixme",
       format: "umd",
     },
     {
-      file: `dist/${pkg.name}.cjs.js`,
+      file: `dist/pad.cjs.js`,
       format: "cjs",
     },
     {
-      file: `dist/${pkg.name}.esm.js`,
+      file: `dist/pad.esm.js`,
       format: "esm",
     },
   ],
