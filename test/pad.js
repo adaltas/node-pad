@@ -1,4 +1,4 @@
-import pad from "../lib/index.js";
+import pad from "../src/index.js";
 
 describe("pad", function () {
   it("should pad right", function () {

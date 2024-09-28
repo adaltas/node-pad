@@ -1,4 +1,4 @@
-import "../types/wcwidth.d.ts";
+/// <reference path='../types/wcwidth.d.ts' />
 import wcwidth from "wcwidth";
 
 interface WCWidthOptions {

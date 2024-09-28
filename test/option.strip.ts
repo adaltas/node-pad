@@ -1,4 +1,4 @@
-import pad from "../lib/index.js";
+import pad from "../src/index.js";
 
 describe("option.strip", function () {
   it("strip left if text longer than length", function () {
