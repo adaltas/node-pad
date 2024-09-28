@@ -1,7 +1,6 @@
 
 import commonjs from 'rollup-plugin-commonjs';
 import resolve from 'rollup-plugin-node-resolve';
-const babel = require('rollup-plugin-babel');
 const pkg = require('./package');
 
 export default {
@@ -31,6 +30,5 @@ export default {
       }
     }),
     resolve(),
-    babel(),
   ]
 };
