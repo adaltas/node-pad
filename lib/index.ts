@@ -69,7 +69,8 @@ function pad(
   const padlength =
     options.fixed_width === true ?
       length - (textnocolors || text).length
-    : length - wcwidth.config(options.wcwidth_options || {})(textnocolors || text);
+    : length -
+      wcwidth.config(options.wcwidth_options || {})(textnocolors || text);
   if (padlength < 0) {
     if (options.strip) {
       return invert ? text.substr(length * -1) : text.substr(0, length);

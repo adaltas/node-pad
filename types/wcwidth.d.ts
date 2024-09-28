@@ -1,4 +1,3 @@
-
 declare module "wcwidth" {
   interface WCWidthOptions {
     control?: number;
