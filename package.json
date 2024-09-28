@@ -37,6 +37,17 @@
   ],
   "license": "BSD-3-Clause",
   "main": "dist/pad.cjs.js",
+  "mocha": {
+    "inline-diffs": true,
+    "recursive": true,
+    "reporter": "spec",
+    "require": [
+      "should",
+      "ts-node/register"
+    ],
+    "throw-deprecation": false,
+    "timeout": 40000
+  },
   "module": "dist/pad.esm.js",
   "repository": {
     "type": "git",
