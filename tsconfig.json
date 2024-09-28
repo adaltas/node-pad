@@ -10,6 +10,7 @@
     "esModuleInterop": false,
     /* Enable all strict type-checking options. */
     "strict": true,
-    "sourceMap": true
+    "sourceMap": true,
+    "allowSyntheticDefaultImports": true
   }
 }
