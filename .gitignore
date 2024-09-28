@@ -5,3 +5,4 @@
 /node_modules
 !.gitignore
 !.github
+!.husky
