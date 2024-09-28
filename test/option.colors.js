@@ -1,4 +1,4 @@
-const pad = require("../lib/index.js");
+import pad from "../lib/index.js";
 
 describe("option.colors", function () {
   it("should pad right", function () {

@@ -1,4 +1,4 @@
-const pad = require("../lib");
+import pad from "../lib/index.js";
 
 describe("pad", function () {
   it("should pad right", function () {

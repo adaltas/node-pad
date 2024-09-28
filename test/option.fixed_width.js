@@ -1,4 +1,4 @@
-const pad = require("../lib/index.js");
+import pad from "../lib/index.js";
 
 describe("option.fixed_width", function () {
   it("characters with more than one column", function () {

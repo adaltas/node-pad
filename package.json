@@ -8,6 +8,7 @@
     "@types/mocha": "^10.0.8",
     "@types/node": "^22.7.4",
     "@types/should": "^13.0.0",
+    "@types/wcwidth": "^1.0.2",
     "coffeescript": "^2.7.0",
     "mocha": "^10.7.3",
     "rollup": "^4.22.5",
@@ -35,11 +36,11 @@
   "main": "dist/pad.cjs.js",
   "mocha": {
     "inline-diffs": true,
+    "loader": "ts-node/esm",
     "recursive": true,
     "reporter": "spec",
     "require": [
-      "should",
-      "ts-node/register"
+      "should"
     ],
     "throw-deprecation": false,
     "timeout": 40000
@@ -57,8 +58,8 @@
     "patch": "npm version patch -m 'Bump to version %s'",
     "minor": "npm version minor -m 'Bump to version %s'",
     "major": "npm version major -m 'Bump to version %s'",
-    "pretest": "npm run build",
-    "test": "mocha test/*.{coffee,ts}"
+    "test": "mocha test/*.{js,ts}"
   },
-  "types": "dist/pad.d.ts"
+  "types": "dist/pad.d.ts",
+  "type": "module"
 }
