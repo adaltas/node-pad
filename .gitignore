@@ -1,8 +1,6 @@
 .*
 /dist
 /node_modules
-/package-log.json
-/package-lock.json
 /yarn.lock
 !.gitignore
 !.github
