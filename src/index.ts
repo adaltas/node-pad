@@ -82,4 +82,3 @@ function pad(
 }
 
 export default pad;
-export { pad };

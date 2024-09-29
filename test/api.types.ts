@@ -1,5 +1,5 @@
 import "should";
-import { pad } from "../src/index.js";
+import pad from "../src/index.js";
 
 describe("API Types", function () {
   it("Arguments", function () {
