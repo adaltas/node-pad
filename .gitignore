@@ -1,8 +1,9 @@
 .*
+/dist
+/node_modules
 /package-log.json
 /package-lock.json
 /yarn.lock
-/node_modules
 !.gitignore
 !.github
 !.husky
